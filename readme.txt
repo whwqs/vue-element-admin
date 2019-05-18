@@ -1,12 +1,28 @@
-��һ������װcnpm
-�����У�npm install -g cnpm --registry=https://registry.npm.taobao.org
+1、安装cnpm
+命令行：npm install -g cnpm --registry=https://registry.npm.taobao.org
 
 
-cd ����ǰvue-element-admin�ļ��к�
-�ڶ�������װmodules
-cnpm install
+# 克隆项目
+git clone https://github.com/PanJiaChen/vue-element-admin.git
 
-��������run
-cnpm run build:prod
+# 进入项目目录
+cd vue-element-admin
+
+# 安装依赖
+npm install
+
+# 建议不要用 cnpm 安装 会有各种诡异的bug 可以通过如下操作解决 npm 下载速度慢的问题
+npm install --registry=https://registry.npm.taobao.org
+
+# 本地开发 启动项目
+npm run dev
+
+
+# 打包正式环境
+npm run build:prod
+
+# 打包预发布环境
+npm run build:stage
+
 
 
